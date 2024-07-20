@@ -22,6 +22,9 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 # Installing the Scripts
 - Download "Buffer Replay Scripts.7z". Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
+![image](https://github.com/user-attachments/assets/4fb9d8ab-d7b6-47d7-a800-ace89daeef56)
+
+
 - Open OBS. Click on "Tools" on the top bar then click on "Scripts"
 
 - Click on the + sign, Navigate to the "Buffer Replay Scripts" folder and add which scripts you want to use.
@@ -39,6 +42,18 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 # Copy These Settings
 
 Setting to change and copy. If setting not mentioned then ignore unless you want to change it.
+
+## Main OBS Window
+Setting up basic settings
+
+- Create a Scene and name it whatever you want
+- Add a new source and pick Display Capture
+  - This will be the main thing Replay Buffer will capture. Add new sources to have OBS capture specific things as needed.
+
+- Click the Gear under Audio Mixer
+  - This is where you can control the gain on your own microphone and desktop audio if needed.
+
+- Scene transition: switch between Fade and Cut if you want
 
 ## General
 
