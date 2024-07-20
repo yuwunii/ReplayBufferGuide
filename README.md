@@ -141,7 +141,7 @@ Setting to change and copy. If setting not mentioned then ignore unless you want
 
 ## General
 - Name it anything
-- Run with highest privilaged = checked
+- Run with highest privilages = checked
 
 ![image](https://github.com/user-attachments/assets/2a61fc1b-74d4-4b9a-97b9-61f3ffa4500c)
 
@@ -164,6 +164,7 @@ Setting to change and copy. If setting not mentioned then ignore unless you want
   - (Remove minimize to tray if you want)
 - Start in = C:\Program Files\obs-studio\bin\64bit\
   - VERY IMPORTANT:  Copy exactly that without any "quotations" and make sure the \ is at the end
+  - If obs64.exe is on a diffrent drive or path you just need to put the folder path that obs64.exe is in
 - Click "OK"
 
 ![image](https://github.com/user-attachments/assets/82299acf-03c9-44e1-be23-ef64c50c51e8)
