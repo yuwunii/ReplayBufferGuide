@@ -59,7 +59,7 @@ Setting to change and copy. If setting not mentioned then ignore unless you want
   - Video Encoder = NVIDIA NVENC HEVC
   - Audio Encoder = FFmpeg AAC
   - Audio Track = 1 (or how many ever you want to use)
-  - Rescale Output = Disabled
+  - Rescale Output = Disabled (DO NOT TOUCH)
   - Custom Muxer Settings = Empty
   - Automatic File Splitting = Unchecked
 - Encoder Settings
@@ -109,7 +109,7 @@ Setting to change and copy. If setting not mentioned then ignore unless you want
 ## Video
 - Base (Canvas) Resolution = Your Native Resolution
 - Output (Scaled) Resolution = Your Native Resolution
-- Downscale Filter = Do Not Touch
+- Downscale Filter = Bicubic. If no option then just leave as is.
   - Common FPS Values = 60
 
 ![image](https://github.com/user-attachments/assets/eb689d05-56e7-4970-a68d-7c4912426fce)
@@ -134,3 +134,61 @@ Setting to change and copy. If setting not mentioned then ignore unless you want
 
 
 ![image](https://github.com/user-attachments/assets/51267aa0-466f-4a1b-ac2c-61382f61b9e6)
+
+# How to Make OBS Replay Buffer run on its own on Start Up
+- Open Start Menu, type Task Scheduler and open it.
+- Click on "Create Task..."
+
+## General
+- Name it anything
+- Run with highest privilaged = checked
+
+![image](https://github.com/user-attachments/assets/2a61fc1b-74d4-4b9a-97b9-61f3ffa4500c)
+
+## Triggers
+- Click "New..."
+- Begin the task: = At log in
+- Pick Any user or Specific User
+- Enabled = checked
+- Click "OK"
+
+![image](https://github.com/user-attachments/assets/1e0c04d7-f64f-4f95-bcc1-8f640f28c4c8)
+
+
+## Actions
+- Click "New..."
+- Action: Start a program
+- Program/Script = "C:\Program Files\obs-studio\bin\64bit\obs64.exe"
+  - (has to be obs64.exe)
+- Add arguments: = --startreplaybuffer --minimize-to-tray
+  - (Remove minimize to tray if you want)
+- Start in = C:\Program Files\obs-studio\bin\64bit\
+  - VERY IMPORTANT:  Copy exactly that without any "quotations" and make sure the \ is at the end
+- Click "OK"
+
+![image](https://github.com/user-attachments/assets/82299acf-03c9-44e1-be23-ef64c50c51e8)
+
+
+## Settings
+- Allow task to be run on demand = checked
+- Stop task if its runs longer than: = unckeck
+- Click "OK"
+
+![image](https://github.com/user-attachments/assets/1620efb0-fff3-4f55-8780-e8175bebb1c6)
+
+
+At this point close OBS then right click the task and click run. OBS should run and appear with a red dot on your systen tray. Open it and see if Replay Buffer is running the the button is blue. At this point you are all set up.
+
+## Fixing Priority (Optional)
+Task Scheduler gives all tasks a low priority and limits drive speed. I don't know if this negatively affects replay buffer but I'll add this anyways
+- Highlight the task you just created
+- Click "Export..."
+- Save to anywhere (desktop)
+- Open file with Notepad
+- Ctrl+F "Priority"
+- Look for <Priority>7</Priority>
+- Replace the 7 with a 4
+- Save file
+- Go back to Task Scheduler
+- Delete the OBS task you created
+- Import the new task you just edited
