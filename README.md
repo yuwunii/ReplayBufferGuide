@@ -66,7 +66,11 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
 
 2. **OBS Buffer Clear.lua** = By default if you capture, for example, the last 10 minutes but you capture again 3 minutes later it will still capture the last 10 minutes including the clipped part you already captured. This script changes that and makes it funtions the same as ShadowPlay.
   
-4. **OBSPlay.lua** = Create a scene for every game you want to have a folder for and clips will get sorted into those. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
+3. **OBSPlay.lua** = Create a scene for every game you want to have a folder for and clips will get sorted into those. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
+
+Use OBSPlay if you aren't going to use the sort into folders trick. https://x.com/nuttylmao/status/1811421731904774386
+
+or don't use either have have all your clips in a single folder.
 
 # Configure OBS Settings
 
