@@ -112,9 +112,9 @@ Setting up basic settings
   - Automatic File Splitting = Unchecked
 - Encoder Settings
   - Rate Control = CQP
-  - CQ Level = 18 (anywhere between 14-21. Lower = Better Quality, Larger File Size. Higher = Lower Quality, Lower File Size)
+  - CQ Level = 20 (anywhere between 14-21. Lower = Better Quality, Larger File Size. Higher = Lower Quality, Lower File Size)
   - Keyframe Interval = 2
-  - Preset = P6
+  - Preset = P5
   - Tuning  = High Quality
   - Multipass Mode = Single Pass
   - Profile = main
