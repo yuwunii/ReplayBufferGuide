@@ -20,7 +20,7 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 
 
 # Installing the Scripts
-Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/tag/v0.01) to download the Replay Buffer Scripts
+Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0.01/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
 
 Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
