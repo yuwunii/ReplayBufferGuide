@@ -51,7 +51,7 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 	- [Fixing Priority (Optional)](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#fixing-priority-optional)
 
 # Installing the Scripts
-Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0.01/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
+Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0w0/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
 
 Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
