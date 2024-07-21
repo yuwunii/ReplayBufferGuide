@@ -1,5 +1,12 @@
-# ReplayBufferGuide
-## Guides
+# OBS Replay Buffer Guide
+
+ShadowPlay replacement using OBS Replay Buffer because Shadowplay sucks ass.
+
+Only use this guide if you have an NVidia GPU because this replies on the NVENC chip on the GPU.
+
+DO NOT change the volume of OBS in your volume mixer. It is tied to how much volume OBS is capturing. Leave it at 100% or else your recording audio will be extremely quiet.
+
+## Guide Basis
 <https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay> 
 
 <https://github.com/StuckInLimbo/OBS-ReplayBuffer-Setup>
@@ -7,7 +14,7 @@
 ## OBS DL Link
 <https://obsproject.com/download>
 
-## Scripts and Plugins
+## Scripts and Plugins Sources
 OBSPlay.lua = <https://github.com/lolepop/obsplay>
 
 OBS Buffer Capture Sound.lua = <https://gist.github.com/snakecase/e816384a071cec31efbb4b9e429c108d>
@@ -18,6 +25,25 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 
 <https://github.com/Meachamp/OBS-NoPreventSleep> = (Stops buffer replay when sleeping computer, turns back on when computer wakes. Currently not working for me.)
 
+# Table of Contents
+- [Installing the Scripts](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0.01/Buffer.Replay.Scripts.7z)
+- [Configure OBS Settings](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#configure-obs-settings)
+	- [Main OBS Window](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#main-obs-window)
+	- [General](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#general)
+	- [Output](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#output)
+		- [Recording](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#recording)
+		- [Audio](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#audio)
+		- [Replay Buffer](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#replay-buffer)
+	- [Audio](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#audio-1)
+	- [Video](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#video)
+	- [Hotkeys](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#hotkeys)
+	- [Advanced](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#advanced)
+- [How to Make OBS Replay Buffer run on its own on Start Up](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#how-to-make-obs-replay-buffer-run-on-its-own-on-start-up)
+	- [General](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#general-1)
+	- [Triggers](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#triggers)
+	- [Actions](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#actions)
+	- [Settings](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#settings)
+	- [Fixing Priority (Optional)](https://github.com/yuwunii/ReplayBufferGuide/edit/main/README.md#fixing-priority-optional)
 
 # Installing the Scripts
 Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0.01/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
@@ -31,7 +57,7 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
 
 - Click on the + sign, Navigate to the "Buffer Replay Scripts" folder and add which scripts you want to use.
 
-1. **OBS Buffer Capture Sound.lua** = Plays a soundbyte when you capture a buffer replay. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
+1. **OBS Buffer Capture Sound.lua** = Plays a sound when you capture a buffer replay. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
 
 2. **OBS Buffer Clear.lua** = By default if you capture, for example, the last 10 minutes but you capture again 3 minutes later it will still capture the last 10 minutes including the clipped part you already captured. This script changes that and makes it funtions the same as ShadowPlay.
 
@@ -41,9 +67,9 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
   
 4. **OBSPlay.lua** = This script does the same job as the Replay Folders script but you have to create a scene for every game you want to have a folder for instead. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
 
-# Copy These Settings
+# Configure OBS Settings
 
-Setting to change and copy. If setting not mentioned then ignore unless you want to change it.
+Settings to change and copy. If a setting is not mentioned then ignore unless you want to change it.
 
 ## Main OBS Window
 Setting up basic settings
