@@ -1,4 +1,6 @@
 # ReplayBufferGuide
+Click here to get to the README page since I'm bad at github.
+
 ## Guides
 <https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay> 
 
