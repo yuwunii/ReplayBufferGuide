@@ -113,7 +113,7 @@ Setting up basic settings
 - Encoder Settings
   - Rate Control = CQP
   - CQ Level = 18 (anywhere between 14-21. Lower = Better Quality, Larger File Size. Higher = Lower Quality, Lower File Size)
-  - Keyframe Interval = 0
+  - Keyframe Interval = 2
   - Preset = P6
   - Tuning  = High Quality
   - Multipass Mode = Single Pass
@@ -123,7 +123,7 @@ Setting up basic settings
   - GPU = 0
   - Max B-frames = 2
 
-![image](https://github.com/user-attachments/assets/97a456c6-d689-49b0-88a0-146b6374551a)
+![image](https://github.com/user-attachments/assets/7b579542-38da-412e-a217-add32478f5a4)
 
 ### Audio
 -Set all audio bitrate to 160
