@@ -134,11 +134,15 @@ Setting up basic settings
   - Enable Replay Buffer = Checked
   - Maximum Replay Time = in seconds (however long you want)
   - Maximum Memory = in MB (temp recordings are saved to RAM instead of storage)
-- Refer to this guide to choose settings
+    - This sets the limit on how large the file size will be.
+    - If you set the replay time to 10 minutes but the file limit to 2048 MB, the video file will only record up to 2GB worth of video and if it hits that data limit before the 10 minute mark the video file could be less than 10 minutes.
+    - ex. I set 10 minutes as my maximum and 4096 MB but the recording hit the memory limit first and the recording I took was only 6 minutes long.
+- Here is a rule of thumb to go by. Increase the Memory Limit as needed. Just know it will take RAM space.
   - 5 Minutes = 300s = 2048 MB
   - 10 Minutes = 600s = 4096 MB
   - 15 Minutes = 900s = 6144 MB
   - 20 Minutes = 1200s = 8192 MB
+-There is no option to record temp data to disk (like how Shadowplay does it) instead of RAM
 
 ![image](https://github.com/user-attachments/assets/5852b14d-d146-433d-9caa-3bec56118bf9)
 
