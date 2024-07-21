@@ -1,10 +1,15 @@
 # OBS Replay Buffer Guide
+### Quick Few Notes
 
 ShadowPlay replacement using OBS Replay Buffer because Shadowplay sucks ass.
 
 Only use this guide if you have an NVidia GPU because this replies on the NVENC chip on the GPU.
 
 DO NOT change the volume of OBS in your volume mixer. It is tied to how much volume OBS is capturing. Leave it at 100% or else your recording audio will be extremely quiet.
+
+https://x.com/nuttylmao/status/1811421731904774386 
+
+Neat OBS trick to automatically orgainze clips. By default all clips will just be sent to a single folder. This will sort clips by date into new folders. Added to settings guide.
 
 ## Guide Basis
 <https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay> 
@@ -15,13 +20,13 @@ DO NOT change the volume of OBS in your volume mixer. It is tied to how much vol
 <https://obsproject.com/download>
 
 ## Scripts and Plugins Sources
-OBSPlay.lua = <https://github.com/lolepop/obsplay>
-
 OBS Buffer Capture Sound.lua = <https://gist.github.com/snakecase/e816384a071cec31efbb4b9e429c108d>
 
 OBS Buffer Clear.lua = <https://obsproject.com/forum/threads/smarter-replay-buffer-options.156347/post-649470/>
 
-OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-buffer-folders.1667/>
+OBSPlay.lua = <https://github.com/lolepop/obsplay>
+
+OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-buffer-folders.1667/> Will autodetect the current full screened application and automatically create a folder named after it when clipping a buffer.
 
 <https://github.com/Meachamp/OBS-NoPreventSleep> = (Stops buffer replay when sleeping computer, turns back on when computer wakes. Currently not working for me.)
 
@@ -60,12 +65,8 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
 1. **OBS Buffer Capture Sound.lua** = Plays a sound when you capture a buffer replay. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
 
 2. **OBS Buffer Clear.lua** = By default if you capture, for example, the last 10 minutes but you capture again 3 minutes later it will still capture the last 10 minutes including the clipped part you already captured. This script changes that and makes it funtions the same as ShadowPlay.
-
-**Only pick ONE between OBS Buffer Replay Folders.lua and OBSPlay.lua**
-
-3. **OBS Buffer Replay Folders.lua** = Automatically creates a folder based on the current fullscreen application opened. Works like how ShadowPlay creates folders per game but this script is less reliable but works.
   
-4. **OBSPlay.lua** = This script does the same job as the Replay Folders script but you have to create a scene for every game you want to have a folder for instead. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
+4. **OBSPlay.lua** = Create a scene for every game you want to have a folder for and clips will get sorted into those. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
 
 # Configure OBS Settings
 
@@ -172,7 +173,9 @@ Setting up basic settings
   - Color Space = Rec. 709
   - Color Range = Limited
 - Recording
-  - Filename Formatting = (You can leave as is. Hover over the text box to see formats)
+  - Filename Formatting = %CCYY-%MM-%DD\%CCYY-%MM-%DD %hh-%mm-%ss
+    - This will make it so a new folder gets created every day for easier orginazation 
+    - Leave as is if you are going to use OBSPlay. Unsure if it works together.
   - Overwrite if file exists = Unchecked
 
 
