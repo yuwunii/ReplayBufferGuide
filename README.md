@@ -1,6 +1,4 @@
 # ReplayBufferGuide
-Click here to get to the README page since I'm bad at github.
-
 ## Guides
 <https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay> 
 
@@ -22,11 +20,7 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 
 
 # Installing the Scripts
-- Download "Buffer Replay Scripts.7z" from this page
-
-![image](https://github.com/user-attachments/assets/61364bd8-9c07-453b-afaa-12bcf97e7931)
-
-![image](https://github.com/user-attachments/assets/a215c510-af4d-49aa-acdc-696a0bcf0d78)
+Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/tag/v0.01) to download the Replay Buffer Scripts
 
 Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
