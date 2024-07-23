@@ -1,15 +1,22 @@
 # OBS Replay Buffer Guide
-### Quick Few Notes
+## Quick Few Notes
 
 ShadowPlay replacement using OBS Replay Buffer because Shadowplay sucks ass.
 
 Only use this guide if you have an NVidia GPU because this replies on the NVENC chip on the GPU.
 
-DO NOT change the volume of OBS in your volume mixer. It is tied to how much volume OBS is capturing. Leave it at 100% or else your recording audio will be extremely quiet.
-
 https://x.com/nuttylmao/status/1811421731904774386 
 
 Neat OBS trick to automatically orgainze clips. By default all clips will just be sent to a single folder. This will sort clips by date into new folders. Added to settings guide.
+
+
+## List of some issues I've encountered and solved since using Replay Buffer
+
+1. DO NOT change the volume of OBS in your volume mixer. It is tied to how much volume OBS is capturing. Leave it at 100% or else your recording audio will be extremely quiet.
+
+2. This will be a non-issue for most people but it was an issue for me since I'm on a 1440p ultrawide. I was recording with replay buffer on OBS at 1440p and streaming to Discord in 1440p. This used up over 100% of my GPU Encoder and my replay buffer stopped working. Discord was using 90% of my GPU Encoder and OBS was using 50%. I solved this by scaling down my resolution in OBS to 1080p and stream to discord in 1080p. This reduced the usage to 30% for OBS and 50% for Discord now the total being under 100% making both work perfectly fine. As I mentioned earlier this will be a non-issue for most people since most people have 1080p 16:9 monitors.
+
+
 
 ## Guide Basis
 <https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay> 
