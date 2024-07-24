@@ -151,7 +151,11 @@ Setting up basic settings
   - 10 Minutes = 600s = 4096 MB
   - 15 Minutes = 900s = 6144 MB
   - 20 Minutes = 1200s = 8192 MB
--There is no option to record temp data to disk (like how Shadowplay does it) instead of RAM
+- There is no option to record temp data to disk (like how Shadowplay does it) instead of RAM
+- Real life example on how this works
+  - I have my limits set to 20 minutes and 4096MB (4GB) memory limit.
+  - When I play a game like Valorant there is a lot of stuff moving on screen that uses up the memory limit fast and the clip would end up being around 5-10 minutes at 4GB. Hitting the memory limit first.
+  - When I'm watching stuff on Discord theres less moving stuff taking the memory and the clip would record the full 20 minutes and the file only being around 2GB large. Hitting the time limit first.
 
 ![image](https://github.com/user-attachments/assets/5852b14d-d146-433d-9caa-3bec56118bf9)
 
