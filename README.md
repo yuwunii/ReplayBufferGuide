@@ -5,6 +5,8 @@ ShadowPlay replacement using OBS Replay Buffer because Shadowplay sucks ass.
 
 Only use this guide if you have an NVidia GPU because this replies on the NVENC chip on the GPU.
 
+AMD card probably work but I dont know much or if they have their own encoding chip.
+
 https://x.com/nuttylmao/status/1811421731904774386 
 
 Neat OBS trick to automatically orgainze clips. By default all clips will just be sent to a single folder. This will sort clips by date into new folders. Added to settings guide.
