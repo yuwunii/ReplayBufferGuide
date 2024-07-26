@@ -35,12 +35,15 @@ OBS Buffer Clear.lua = <https://obsproject.com/forum/threads/smarter-replay-buff
 
 OBSPlay.lua = <https://github.com/lolepop/obsplay>
 
-OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-buffer-folders.1667/> Will autodetect the current full screened application and automatically create a folder named after it when clipping a buffer.
+OBS replay buffer Folders.lua = <https://obsproject.com/forum/resources/replay-buffer-folders.1667/> Will autodetect the current full screened application and automatically create a folder named after it when clipping a buffer.
 
-<https://github.com/Meachamp/OBS-NoPreventSleep> = (Stops buffer replay when sleeping computer, turns back on when computer wakes. Currently not working for me.)
+<https://github.com/Meachamp/OBS-NoPreventSleep> = Stops replay buffer when sleeping computer, turns back on when computer wakes. 
+
+C:\Program Files\obs-studio\obs-plugins\64bit
 
 # Table of Contents
 - [Installing the Scripts](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#installing-the-scripts)
+	- [Installing OBS-NoPreventSleep.dll] 
 - [Configure OBS Settings](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#configure-obs-settings)
 	- [Main OBS Window](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#main-obs-window)
 	- [General](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#general)
@@ -62,16 +65,16 @@ OBS Buffer Replay Folders.lua = <https://obsproject.com/forum/resources/replay-b
 # Installing the Scripts
 Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0w0/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
 
-Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
+Extract then place the "replay buffer Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
 ![image](https://github.com/user-attachments/assets/4fb9d8ab-d7b6-47d7-a800-ace89daeef56)
 
 
 - Open OBS. Click on "Tools" on the top bar then click on "Scripts"
 
-- Click on the + sign, Navigate to the "Buffer Replay Scripts" folder and add which scripts you want to use.
+- Click on the + sign, Navigate to the "replay buffer Scripts" folder and add which scripts you want to use.
 
-1. **OBS Buffer Capture Sound.lua** = Plays a sound when you capture a buffer replay. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
+1. **OBS Buffer Capture Sound.lua** = Plays a sound when you capture a replay buffer. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
 
 2. **OBS Buffer Clear.lua** = By default if you capture, for example, the last 10 minutes but you capture again 3 minutes later it will still capture the last 10 minutes including the clipped part you already captured. This script changes that and makes it funtions the same as ShadowPlay.
   
@@ -80,6 +83,19 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
 Use OBSPlay if you aren't going to use the sort into folders trick. https://x.com/nuttylmao/status/1811421731904774386
 
 or don't use either have have all your clips in a single folder.
+
+
+## Installing OBS-NoPreventSleep.dll
+To make OBS Replay Buffer function more like ShadowPlay you can download this .dll and it will stop replay buffer when you sleep your computer and automatically turn it back on when you wake it up.
+
+<https://github.com/Meachamp/OBS-NoPreventSleep/releases/tag/v0.3>
+
+- Download the .zip in the release here and extract the .dll.
+  
+- Place the .dll in "C:\Program Files\obs-studio\obs-plugins\64bit"
+
+- Thats all. You can turn on replay buffer then try sleeping your PC. If it goes to sleep then it worked.
+
 
 # Configure OBS Settings
 
