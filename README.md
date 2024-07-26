@@ -43,7 +43,7 @@ C:\Program Files\obs-studio\obs-plugins\64bit
 
 # Table of Contents
 - [Installing the Scripts](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#installing-the-scripts)
-	- [Installing OBS-NoPreventSleep.dll] 
+	- [Installing OBS-NoPreventSleep.dll](https://github.com/yuwunii/ReplayBufferGuide/tree/main?tab=readme-ov-file#installing-obs-nopreventsleepdll)
 - [Configure OBS Settings](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#configure-obs-settings)
 	- [Main OBS Window](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#main-obs-window)
 	- [General](https://github.com/yuwunii/ReplayBufferGuide?tab=readme-ov-file#general)
@@ -65,7 +65,7 @@ C:\Program Files\obs-studio\obs-plugins\64bit
 # Installing the Scripts
 Click [here](https://github.com/yuwunii/ReplayBufferGuide/releases/download/v0w0/Buffer.Replay.Scripts.7z) to download the Replay Buffer Scripts
 
-Extract then place the "replay buffer Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
+Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts"
 
 ![image](https://github.com/user-attachments/assets/4fb9d8ab-d7b6-47d7-a800-ace89daeef56)
 
