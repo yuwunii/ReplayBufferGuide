@@ -77,7 +77,7 @@ Extract then place the "Buffer Replay Scripts" folder in "C:\Program Files\obs-s
 1. **OBS Buffer Capture Sound.lua** = Plays a sound when you capture a replay buffer. You can replace the sound but the file has to be named "sound.wav". I also advise to use Audacity to adjust the sound to be higher or lower.
 
 2. **OBS Buffer Clear.lua** = By default if you capture, for example, the last 10 minutes but you capture again 3 minutes later it will still capture the last 10 minutes including the clipped part you already captured. This script changes that and makes it funtions the same as ShadowPlay.
-  
+
 3. **OBSPlay.lua** = Create a scene for every game you want to have a folder for and clips will get sorted into those. Refer to this guide https://github.com/MFGAVIN/OBS-Alternative-to-Shadowplay/tree/main?tab=readme-ov-file#OBSPlay
 
 Use OBSPlay if you aren't going to use the sort into folders trick. https://x.com/nuttylmao/status/1811421731904774386
@@ -91,10 +91,9 @@ To make OBS Replay Buffer function more like ShadowPlay you can download this .d
 <https://github.com/Meachamp/OBS-NoPreventSleep/releases/tag/v0.3>
 
 - Download the .zip in the release here and extract the .dll.
-  
 - Place the .dll in "C:\Program Files\obs-studio\obs-plugins\64bit"
-
 - Thats all. You can turn on replay buffer then try sleeping your PC. If it goes to sleep then it worked.
+- There is an issue where sometimes OBS freezes or Replay Buffer will not automatically be on. Check this time to time to make sure Replay Buffer is enabled.
 
 
 # Configure OBS Settings
@@ -243,8 +242,10 @@ Setting up basic settings
 - Action: Start a program
 - Program/Script = "C:\Program Files\obs-studio\bin\64bit\obs64.exe"
   - (has to be obs64.exe)
-- Add arguments: = --startreplaybuffer --minimize-to-tray
-  - (Remove minimize to tray if you want)
+- Add arguments: = --disable-shutdown-check --startreplaybuffer --minimize-to-tray
+  - "--disable-shutdown-check" = This removes the dialogue box asking if you want to launch in safe mode when you launch your PC.
+  - "--startreplaybuffer" = This automatically starts Replay Buffer when OBS launches.
+  - "--minimize-to-tray" = OBS will launch minimized into your tray
 - Start in = C:\Program Files\obs-studio\bin\64bit\
   - VERY IMPORTANT:  Copy exactly that without any "quotations" and make sure the \ is at the end
   - If obs64.exe is on a diffrent drive or path you just need to put the folder path that obs64.exe is in
